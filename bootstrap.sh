@@ -12,7 +12,6 @@ brew install --cask pycharm-ce
 brew install --cask raycast
 brew install --cask notion
 brew install --cask arc
-brew install --cask mathpix-sniping-tool
-npm install -g @mathpix/mpx-cli
+brew install tesseract
 brew install --cask karabiner-elements
 brew install --cask warp
