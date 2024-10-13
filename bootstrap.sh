@@ -12,6 +12,5 @@ brew install --cask pycharm-ce
 brew install --cask raycast
 brew install --cask notion
 brew install --cask arc
-brew install tesseract
 brew install --cask karabiner-elements
 brew install --cask warp
