@@ -18,7 +18,7 @@ ESSENTIAL_APPS=(
     pycharm-ce
     raycast
     notion
-    arc
+    brave
     karabiner-elements
     warp
 )
@@ -58,9 +58,9 @@ for tool in "${ESSENTIAL_TOOLS[@]}"; do
 done
 
 # Set Arc as the default browser for HTTP, HTTPS, and HTML files
-duti -s com.arc.browser http
-duti -s com.arc.browser https
-duti -s com.arc.browser public.html
+duti -s com.brave.browser http
+duti -s com.brave.browser https
+duti -s com.brave.browser public.html
 
 # Set Preview as the default app for PDFs
 duti -s com.apple.Preview pdf
