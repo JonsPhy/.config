@@ -44,6 +44,7 @@ ESSENTIAL_TOOLS=(
     fzf  # Fuzzy Finder for the terminal
     tmux  # Terminal multiplexer
     duti
+    gh
 )
 
 log "Installing essential command-line tools..."
