@@ -38,19 +38,74 @@ const rules: KarabinerRules[] = [
         ],
         type: "basic",
       },
-      
     ],
   },
   ...createHyperSubLayers({
     spacebar: open(
       "raycast://extensions/raycast/apple-reminders/create-reminder"
     ),
+    //symbol access
+    5: {
+      description: "Hyper+5 -> [",
+      to: [
+        {
+          key_code: "5",
+          modifiers: ["right_option"],
+        },
+      ],
+      type: "basic",
+    },
+    6: {
+      description: "Hyper+6 -> ]",
+      to: [
+        {
+          key_code: "6",
+          modifiers: ["right_option"],
+        },
+      ],
+      type: "basic",
+    },
+    7: {
+      description: "Hyper+7 -> backslash",
+      to: [
+        {
+          key_code: "7",
+          modifiers: ["left_option", "left_shift"],
+        },
+      ],
+      type: "basic",
+    },
+    8: {
+      description: "Hyper+8 -> {",
+      to: [
+        {
+          key_code: "8",
+          modifiers: ["right_option"],
+        },
+      ],
+      type: "basic",
+    },
+    9: {
+      description: "Hyper+9 -> }",
+      to: [
+        {
+          key_code: "9",
+          modifiers: ["right_option"],
+        },
+      ],
+      type: "basic",
+    },
+
+
+
     // b = "B"rowse
     b: {
       m: open("https://moodle.lmu.de/"),
-      y: open("https://www.youtube.com/"),
+      z: open("https://www.youtube.com/"),
       l: open("https://tinyurl.com/35kkup2"),
-      n: open("raycast://extensions/ron-myers/brave/new-tab")
+      n: open("raycast://extensions/ron-myers/brave/new-tab"),
+      t: open("https://www2.physik.uni-muenchen.de/lehre/vorlesungen/wise_24_25/T4_stat_phys/index.html"),
+      q: open("https://www2.physik.uni-muenchen.de/lehre/vorlesungen/wise_24_25/TB1_-Quantum-Field-Theory-_Quantum-Electrodynamics_/Problem-Sets/index.html")
     },
     // o = "Open" applications
     o: {
@@ -65,11 +120,8 @@ const rules: KarabinerRules[] = [
       p: app("Pycharm Community Edition"),
       s: app("Spark"),
       t: app("Warp"),
-      v: app("Vorschau"),
       w: app("WhatsApp")
     },
-
-
     // w = "Window" via rectangle.app
     w: {
         semicolon: {
@@ -157,13 +209,14 @@ const rules: KarabinerRules[] = [
 
     // r = "Raycast"
     r: {
-      c: open("raycast://extensions/thomas/color-picker/pick-color"),
-      e: open(
-        "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
-      ),
-      p: open("raycast://extensions/raycast/raycast/confetti"),
-      h: open("raycast://extensions/raycast/clipboard-history/clipboard-history"),
-      l: open("raycast://extensions/Arthals/simpletexocr/index")
+      b: open("com.apple.screenshot.launcher"), //'b'ildschirm foto
+      c: open("raycast://extensions/thomas/color-picker/pick-color"), //'c'olor
+      e: open("raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"), //'e'moji
+      p: open("raycast://extensions/raycast/raycast/confetti"), //'p'arty
+      h: open("raycast://extensions/raycast/clipboard-history/clipboard-history"), // 'h'istory
+      l: open("raycast://extensions/Arthals/simpletexocr/index"), //'l'atexx
+      n: open("raycast://script-commands/latex?arguments=&arguments=&arguments="), // 'n'ew latex script
+      t: open("raycast://extensions/asubbotin/pomodoro/pomodoro-control-timer"), //'t'imer
     },
 
 
