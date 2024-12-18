@@ -96,7 +96,27 @@ const rules: KarabinerRules[] = [
       type: "basic",
     },
 
-
+    //aerospace modifiers
+    a: {
+        description: "Hyper+a -> aerospace modifiers",
+        to: [
+            {
+                key_code: "left_shift",
+                modifiers: ["left_option", "left_command"],
+            },
+        ],
+        type: "basic",
+     },
+    q: {
+        description: "Hyper+q -> aerospace move modifiers",
+        to: [
+            {
+                key_code: "left_control",
+                modifiers: ["left_option", "left_command"],
+            },
+        ],
+        type: "basic",
+     },
 
     // b = "B"rowse
     b: {
