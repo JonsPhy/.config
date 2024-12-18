@@ -1,0 +1,92 @@
+# General Settings
+after-login-command = []
+after-startup-command = []
+start-at-login = true
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+accordion-padding = 100
+default-root-container-layout = 'tiles'
+default-root-container-orientation = 'auto'
+
+# German Keyboard Layout Preset
+[key-mapping]
+preset = 'qwerty'
+
+# Gaps Configuration
+[gaps]
+inner.horizontal = 20
+inner.vertical = 20
+outer.left = 20
+outer.bottom = 20
+outer.top = 20
+outer.right = 20
+
+# Main Binding Mode
+[mode.main.binding]
+# Resize (Control Modifiers: Shift-Option-Command)
+shift-alt-cmd-minus = 'resize smart -50'  # Shrink window minus=ß
+shift-alt-cmd-0 = 'resize smart +50'      # Expand window
+
+# Layout Switch (Control Modifiers: Shift-Option-Command)
+shift-alt-cmd-period = 'layout tiles horizontal vertical' # Switch to tiled layout
+shift-alt-cmd-comma = 'layout accordion horizontal vertical'
+
+# Focus (Control Modifiers: Shift-Option-Command)
+shift-alt-cmd-h = 'focus left'
+shift-alt-cmd-j = 'focus down'
+shift-alt-cmd-k = 'focus up'
+shift-alt-cmd-l = 'focus right'
+
+# Move (Move Modifiers: Control-Option-Command)
+ctrl-alt-cmd-h = 'move left'
+ctrl-alt-cmd-j = 'move down'
+ctrl-alt-cmd-k = 'move up'
+ctrl-alt-cmd-l = 'move right'
+
+# Workspaces (Control Modifiers: Shift-Option-Command)
+shift-alt-cmd-1 = 'workspace 1'
+shift-alt-cmd-2 = 'workspace 2'
+shift-alt-cmd-3 = 'workspace 3'
+shift-alt-cmd-4 = 'workspace 4'
+shift-alt-cmd-5 = 'workspace 5'
+shift-alt-cmd-6 = 'workspace 6'
+shift-alt-cmd-7 = 'workspace 7'
+shift-alt-cmd-8 = 'workspace 8'
+shift-alt-cmd-9 = 'workspace 9'
+
+
+# Move nodes to workspaces (Move Modifiers: Control-Option-Command)
+ctrl-alt-cmd-1 = 'move-node-to-workspace 1'
+ctrl-alt-cmd-2 = 'move-node-to-workspace 2'
+ctrl-alt-cmd-3 = 'move-node-to-workspace 3'
+ctrl-alt-cmd-4 = 'move-node-to-workspace 4'
+ctrl-alt-cmd-5 = 'move-node-to-workspace 5'
+ctrl-alt-cmd-6 = 'move-node-to-workspace 6'
+ctrl-alt-cmd-7 = 'move-node-to-workspace 7'
+ctrl-alt-cmd-8 = 'move-node-to-workspace 8'
+ctrl-alt-cmd-9 = 'move-node-to-workspace 9'
+
+
+# Workspace and Monitor Switching (Control Modifiers: Shift-Option-Command)
+shift-alt-cmd-tab = 'workspace-back-and-forth'
+ctrl-alt-cmd-tab = 'move-workspace-to-monitor --wrap-around next'
+
+
+
+
+
+
+# Service Mode
+
+shift-alt-cmd-m = 'mode manage'
+
+[mode.manage.binding]
+esc = ['reload-config', 'mode main']
+r = ['flatten-workspace-tree', 'mode main']
+f = ['layout floating tiling', 'mode main']
+backspace = ['close-all-windows-but-current', 'mode main']
+
+ctrl-alt-cmd-h = ['join-with left', 'mode main']
+ctrl-alt-cmd-j = ['join-with down', 'mode main']
+ctrl-alt-cmd-k = ['join-with up', 'mode main']
+ctrl-alt-cmd-l = ['join-with right', 'mode main']
