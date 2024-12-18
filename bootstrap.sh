@@ -21,6 +21,7 @@ ESSENTIAL_APPS=(
     brave
     karabiner-elements
     warp
+    nikitabobko/tap/aerospace
 )
 
 log "Installing essential applications..."
