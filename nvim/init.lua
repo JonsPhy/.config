@@ -1,2 +1,2 @@
 require("jons.core")
-require("jons.lazy")
+require("jons.bootstrap")
