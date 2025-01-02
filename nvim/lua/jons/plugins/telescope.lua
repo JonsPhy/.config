@@ -86,8 +86,8 @@ return {
         "fzf",
         "yank_history",
         "bibtex",
-        "lazygit"
-      },
+        "lazygit",
+         },
       extensions = {
         undo = {
           mappings = {
@@ -109,7 +109,7 @@ return {
         bibtex = {
           depth = 1,
           -- Depth for the *.bib file
-          global_files = { '~/texmf/bibtex/bib/Zotero.bib' },
+          global_files = { '~/Library/texmf/bibtex/bib/Zotero.bib' },
           -- Path to global bibliographies (placed outside of the project)
           search_keys = { 'author', 'year', 'title' },
           -- Define the search keys to use in the picker

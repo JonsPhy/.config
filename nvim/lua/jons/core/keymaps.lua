@@ -13,7 +13,7 @@ vim.g.mapleader = " "
 
 -------------------- General Keymaps --------------------
 
--- delete single character without copying into register
+-- deletcopeFuzzyCommandSearch) single character without copying into register
 -- keymap("n", "x", '"_x', opts)
 -- keymap("v", "p", '"_p', opts)
 

@@ -90,29 +90,14 @@ cd "$TARGET_DIR/$NEW_PROJECT_NAME"
 # Wechsel in das `src`-Verzeichnis und Datei öffnen
 if [ -d "src" ]; then
     cd "src" || exit
-    if [ -f "main.tex" ]; then
-        pycharm main.tex
-        echo "Opening main.tex in PyCharm..."
+    if [ -f "refs.bib" ]; then
+       ln -s ~/Library/texmf/bibtex/bib/Zotero/Zotero.bib refs.bib 
+        echo "linking zotero.bib"
     else
-        echo "Error: main.tex not found in src directory."
+        echo "Error: refs.bib not found in src directory."
     fi
     cd ..
 else
     echo "Error: src directory not found in $TARGET_DIR/$NEW_PROJECT_NAME."
 fi
 cd "$TARGET_DIR/$NEW_PROJECT_NAME"
-
-
-# Wechsel in das `out`-Verzeichnis und Datei öffnen
-if [ -d "out" ]; then
-    cd "out" || exit
-    if [ -f "main.pdf" ]; then
-        pycharm main.pdf
-        echo "Opening main.pdf in PyCharm..."
-    else
-        echo "Error: main.pdf not found in out directory."
-    fi
-    cd ..
-else
-    echo "Error: out directory not found in $TARGET_DIR/$NEW_PROJECT_NAME."
-fi
