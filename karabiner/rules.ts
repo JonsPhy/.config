@@ -137,10 +137,11 @@ const rules: KarabinerRules[] = [
       i: app("Texts"),
       m: app("Music"),
       n: app("Notion"),
-      p: app("Pycharm Community Edition"),
+      p: app("Skim"), // "P"DF
       s: app("Spark"),
       t: app("Warp"),
-      w: app("WhatsApp")
+      w: app("WhatsApp"),
+      y: app("Zotero") // y=z because qwertz keyboard
     },
     // w = "Window" via rectangle.app
     w: {

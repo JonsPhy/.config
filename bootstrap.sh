@@ -14,8 +14,7 @@ else
 fi
 
 # Install essential applications via Homebrew
-ESSENTIAL_APPS=(
-    pycharm-ce
+ESSENTIAL_APPS=( 
     raycast
     notion
     brave
